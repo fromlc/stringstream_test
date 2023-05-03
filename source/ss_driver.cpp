@@ -96,12 +96,12 @@ void addDataItem(string line, int lineNumber) {
 
     int classID;
     stringstream ss;    // to parse file line
+    //ss.exceptions(std::ios::failbit);
+    //#TODO for now handle stringstream errors with if statements
     ss << line;
 
     ss >> classID;      // first token identifies Bicycle or Scooter class
 
-    //ss.exceptions(std::ios::failbit);
-    //#TODO for now handle stringstream errors with if statements
     //#TODO refactor to throw FileFormatException instead
 
     if (classID == ID_BICYCLE) {
