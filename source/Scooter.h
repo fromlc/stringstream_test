@@ -26,8 +26,6 @@ public:
     //Default Scooter constructor
     Scooter() : TwoWheeler(ID_SCOOTER) {
 
-        //TwoWheeler default constructor
-
         //Initialize Scooter's horsepower
         horsepower = 0.0;
     }
@@ -35,8 +33,6 @@ public:
     //Overload Scooter constructor with parameters
     Scooter(string _mfr, string _model, double _horsepower) :
         TwoWheeler(ID_SCOOTER, _mfr, _model) {
-
-        //Invoke overload TwoWheeler constructor
 
         //Initialize horsepower
         horsepower = _horsepower;

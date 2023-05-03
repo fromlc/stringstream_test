@@ -30,9 +30,6 @@ public:
     //Overload constructor with parameters for Bicycle specs
     Bicycle(string _mfr, string _model, string _serial_number) :
         TwoWheeler(ID_BICYCLE, _mfr, _model) {
-        
-        //Bicycle's serial number
-        //serial_number = _serial_number;
     }
     
     //Accessor function to get the Bicycle's serial number
