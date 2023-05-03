@@ -39,7 +39,7 @@ int main() {
     readDataFile("pa9_inventory.txt");
 
     // blank line after error messages
-    cout << std::endl;
+    cout << '\n';
 
     for (auto pItem : *g::pData) {
         cout << pItem->getTypeId() << ' '
@@ -48,6 +48,7 @@ int main() {
             << '\n';
     }
 
+    cout << std::endl;
     return 0;
 }
 

@@ -11,6 +11,7 @@ Data file format:
 - additional data fields are assumed to differ by derived class.
 
 Required to do:
+- Use C++17
 - Base and derived classes must friend function addDataItem().
 > //allow private member access from function reading data into instances
 > friend void addDataItem(string, int);
