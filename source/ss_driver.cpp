@@ -53,7 +53,7 @@ int main() {
 }
 
 //------------------------------------------------------------------------------
-// throws ifstream exception on file open fail
+// #TODO throws ifstream exception on file open fail
 //------------------------------------------------------------------------------
 ifstream openDataFile(const string& filename) {
 
@@ -90,7 +90,7 @@ void readDataFile(const string& filename) {
 }
 
 //------------------------------------------------------------------------------
-// loops to stream file data lines into new Bicycle or Scooter instances
+// adds one file data line to data structure
 //------------------------------------------------------------------------------
 void addDataItem(string line, int lineNumber) {
 
@@ -101,9 +101,8 @@ void addDataItem(string line, int lineNumber) {
     ss >> classID;      // first token identifies Bicycle or Scooter class
 
     //ss.exceptions(std::ios::failbit);
-    //#TODO
-    // for now handle stringstream errors with if statements
-    // refactor to throw FileFormatException instead
+    //#TODO for now handle stringstream errors with if statements
+    //#TODO refactor to throw FileFormatException instead
 
     if (classID == ID_BICYCLE) {
         Bicycle* pB = new Bicycle();
